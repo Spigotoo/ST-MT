@@ -1,0 +1,33 @@
+;===================================================================================================
+; 0_setup.f3dat
+model new
+;===================================================================================================
+; SOIL ZONES
+define gen_soil_zones
+    global dx =  016.
+    global dy =  016.
+    global dz =  016.
+
+	global x0 = -160.;-128.;-064.
+	global x1 = -032.
+	global x2 = -016.
+	global x3 =  288.
+	global x4 =  304.
+	global x5 =  432.;400.;336.
+
+	global y0 = -184.;-152.;-088.
+	global y1 = -056.
+	global y2 = -040.
+	global y3 =  168.
+	global y4 =  184.
+	global y5 =  312.;280.;216.
+
+	global z0 = -288.
+	global z1 = -096.
+	global z2 = -072.
+	global z3 =  000.
+
+    global xelem = int((x5-x0)/dx)
+    global yelem = int((y5-y0)/dy)
+    global zelem = int((z3-z0)/dz)
+end
